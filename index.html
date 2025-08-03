@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIC Inmobiliaria - Próximamente</title>
+    <meta name="description" content="CLIC Inmobiliaria - Próximamente septiembre 2025">
+    <meta name="keywords" content="inmobiliaria, CLIC">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CLIC Inmobiliaria - Próximamente">
+    <meta property="og:description" content="Próximamente septiembre 2025">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clicinmobiliaria.com">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e03f07 0%, #c73307 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .logo-container {
+            margin-bottom: 3rem;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        
+        .countdown-container {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 3rem 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .countdown-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .time-unit {
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            min-width: 120px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .time-unit:hover {
+            transform: translateY(-5px);
+        }
+        
+        .time-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            display: block;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+            line-height: 1;
+        }
+        
+        .time-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 1rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .launch-date {
+            font-size: 2rem;
+            font-weight: 600;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+                opacity: 0.1; 
+            }
+            50% { 
+                transform: translateY(-30px) rotate(180deg); 
+                opacity: 0.3; 
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo { 
+                font-size: 2.8rem; 
+                letter-spacing: 1px;
+            }
+            .subtitle { 
+                font-size: 1.2rem; 
+            }
+            .countdown-title { 
+                font-size: 1.4rem; 
+            }
+            .launch-date { 
+                font-size: 1.5rem; 
+            }
+            .countdown { 
+                gap: 1rem; 
+            }
+            .time-unit { 
+                min-width: 90px; 
+                padding: 1.5rem 1rem; 
+            }
+            .time-number { 
+                font-size: 2.5rem; 
+            }
+            .time-label { 
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+            }
+            .countdown-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+            }
+            .logo {
+                font-size: 2.2rem;
+            }
+            .time-unit {
+                min-width: 75px;
+                padding: 1rem 0.5rem;
+            }
+            .time-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo">CLIC INMOBILIARIA</div>
+            <div class="subtitle">Próximamente</div>
+        </div>
+        
+        <div class="countdown-container">
+            <div class="countdown-title">Lanzamiento</div>
+            <div class="launch-date">22 de Septiembre 2025</div>
+            
+            <div class="countdown" id="countdown">
+                <div class="time-unit">
+                    <span class="time-number" id="days">00</span>
+                    <span class="time-label">Días</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">00</span>
+                    <span class="time-label">Horas</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label">Minutos</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <p>📧 <a href="mailto:admin@clicinmobiliaria.com">admin@clicinmobiliaria.com</a></p>
+        </div>
+    </div>
+    
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const launchDate = new Date('September 22, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+            
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            } else {
+                document.getElementById('countdown').innerHTML = '<div class="time-unit"><span class="time-number">🎉</span><span class="time-label">¡Disponible!</span></div>';
+            }
+        }
+        
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                const size = Math.random() * 4 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 6 + 6) + 's';
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        createParticles();
+    </script>
+</body>
+</html>
